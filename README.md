@@ -2,6 +2,8 @@
 
 # Sistema de Reservas de Restaurante
 
+**Observação:** Se você não encontrar o código na branch "master", verifique a branch "main".
+
 Este é um sistema simples de reservas de restaurante construído com Node.js e MySQL. Ele permite aos usuários criar reservas, visualizar mesas disponíveis e gerenciar contas de usuário.
 
 ## Recursos
