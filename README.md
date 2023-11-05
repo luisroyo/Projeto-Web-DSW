@@ -24,8 +24,9 @@ Este é um sistema simples de reservas de restaurante construído com Node.js e 
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seunome/sistema-de-reservas-de-restaurante.git
-   cd sistema-de-reservas-de-restaurante
+   git clone https://github.com/luisroyo/Projeto-Web-DSW.git
+   cd Projeto-Web-DSW
+
    ```
 
 2. Instale as dependências:
