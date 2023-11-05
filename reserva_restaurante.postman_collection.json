@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "a5fca8b3-92ec-4032-bf5f-4e5563b89a18",
+		"name": "reserva_restaurante",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20038366"
+	},
+	"item": [
+		{
+			"name": "Cadastro Nova Reserva",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJveW8iLCJpZCI6MSwiaWF0IjoxNjk4MTk1NzE0LCJleHAiOjE2OTgxOTkzMTR9.NcKuHo0kGw3siaF-FxR6R6r3_O3PlJsmTWz9bdtu7u0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": 11, // Substitua pelo ID do usuário criado anteriormente\r\n  \"mesaId\": 1, // Substitua pelo ID da mesa desejada\r\n  \"reservaDate\": \"2023-10-30\",\r\n  \"reservaTime\": \"22:00\",\r\n  \"number_of_guests\": 4,\r\n  \"status\": \"confirmada\" // Pode ser \"pendente\", \"confirmada\", etc.\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/reservas",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"reservas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Reservas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/reservas",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"reservas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Reservas por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/reservas/5",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"reservas",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Reserva",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/reservas/2",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"reservas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Reserva",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"Luis Eduardo Rodrigues Royo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/reservas/3",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"reservas",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Novo Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"eduardo\",\r\n\"senha\": \"123456\",\r\n\"name\": \"Luis Royo\",\r\n\"phone\": \"789-012-3456\",\r\n\"email\": \"luis@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/usuarios",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Realiza Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"eduardo\",\r\n  \"senha\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/usuarios/login",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"usuarios",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Todos Usuários",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/usuarios",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Usuário por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/usuarios/9",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"usuarios",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Mesas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/mesas",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"mesas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Usuário String",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/usuarios/search/an",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"usuarios",
+						"search",
+						"an"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
