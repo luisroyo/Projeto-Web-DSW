@@ -144,6 +144,3 @@ Isso facilitará o teste e a familiarização dos colaboradores e usuários com 
 
 Este projeto está licenciado sob a Licença MIT. Sinta-se à vontade para usá-lo e modificá-lo de acordo com suas necessidades.
 
----
-
-Espero que este README completo seja útil para o seu projeto. Lembre-se de personalizar as informações de acordo com o seu sistema de reservas específico.
